@@ -1,0 +1,10 @@
+{
+    "redux": [
+        {"id":1,"name":"toothless","like":0,"srcImages":"./Images/toothless2.gif","srcDefaultImages":"./Images/toothless1.gif","src":"./Images/toothless1.gif","flagImages":false},
+        {"id":2,"name":"ben drowned","like":0,"srcImages":"./Images/benDrowned2.jpg","srcDefaultImages":"./Images/benDrowned1.jpg","src":"./Images/benDrowned1.jpg","flagImages":false}
+    ],
+    "context":[
+        {"id":3,"name":"rain asthetic","like":0,"srcImages":"./Images/rain2.jpg","srcDefaultImages":"./Images/rain1.jpg","src":"./Images/rain1.jpg","flagImages":false},
+        {"id":4,"name":"raven","like":0,"srcImages":"./Images/raven2.jpg","srcDefaultImages":"./Images/raven1.jpg","src":"./Images/raven1.jpg","flagImages":false}
+    ]
+}

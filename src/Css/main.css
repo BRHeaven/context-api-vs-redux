@@ -1,0 +1,111 @@
+.App {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    align-items: center;
+}
+.contextMain, .reduxMain {
+    width: 100%;
+    margin: 0 auto;
+}
+.contextContent, .reduxContent {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.cardContent {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.cardImage {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardContent .cardImage img {
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+.cardContent .cardTitle {
+    padding: 10px;
+}
+.cardContent .cardTitle h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+    letter-spacing: .4px;
+    text-align: start;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+.cardContent .cardTitle p {
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: crimson;
+    padding: 0;
+    margin: 10px 0 0;
+}
+.cardContent .cardButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.cardContent .cardButton button {
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    margin: 0 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: bisque;
+    transition: all 1s;
+    overflow: hidden;
+}
+.cardContent .cardButton button::before {
+    content: '';
+    display: block;
+    width: 200%;
+    height: 200%;
+    background-color: black;
+    position: absolute;
+    top: -10%;
+    left: -500%;
+    transform: skewX(-50deg);
+    transition: all 1s;
+    opacity: .2;
+}
+.cardContent .cardButton button:hover::before {
+    left: -55%;
+}
+.cardContent .cardButton .buttonImage {
+    background-color: blueviolet;
+}
+.cardContent .cardButton .buttonLike {
+    background-color: blue;
+}
+.cardContent .cardButton .buttonImage:hover {
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+.cardContent .cardButton .buttonLike:hover {
+    background-color: whitesmoke;
+    color: blue;
+    border: 2px solid blue;
+}
